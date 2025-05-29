@@ -1,10 +1,9 @@
-# GPU Temperature Publisher
+# OnlyFans Event Publisher
 
-A Go application that simulates and publishes GPU temperature readings to Redpanda.
+A Go application that simulates and publishes Only Fans Events to Redpanda.
 
 ## Features
 
-- Simulates temperature readings from multiple GPU devices
 - Configurable simulation parameters (number of devices, interval, abnormal temperature probability)
 - Publishes readings to Redpanda using the franz-go client
 - Docker and docker-compose support for easy deployment
@@ -28,7 +27,7 @@ gpu-temp-publisher/
 │   ├── config/            # Configuration handling
 │   ├── model/             # Data models
 │   ├── publisher/         # Redpanda publishing logic
-│   └── simulator/         # Temperature simulation logic
+│   └── simulator/         # simulation logic
 ├── Dockerfile             # Docker build configuration
 ├── docker-compose.yml     # Docker Compose configuration
 └── go.mod                 # Go module definition
@@ -40,8 +39,8 @@ gpu-temp-publisher/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/gpu-temp-publisher.git
-   cd gpu-temp-publisher
+   git clone https://github.com/snepar/onlyfans-event-publisher.git
+   cd  onlyfans-event-publisher
    ```
 
 2. Install dependencies:
