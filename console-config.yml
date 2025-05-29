@@ -1,0 +1,31 @@
+kafka:
+  brokers:
+    - redpanda-1:9092
+    - redpanda-2:9092
+  schemaRegistry:
+    enabled: true
+    urls:
+      - http://redpanda-1:8081
+
+redpanda:
+  adminApi:
+    enabled: true
+    urls:
+      - http://redpanda-1:9644
+      - http://redpanda-2:9644
+
+server:
+  listenPort: 8080
+
+console:
+  enabled: true
+  topicDocumentation:
+    enabled: true
+  
+# Topic configurations for better display
+topic:
+  allowedActions:
+    - viewMessages
+    - viewConfig
+    - viewConsumers
+    - viewPartitions
